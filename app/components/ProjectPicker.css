@@ -1,0 +1,13 @@
+
+.project-picker {
+  height: 120px;
+  width: 100%;
+  background-color: #DDD;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+ol {
+  list-style-type: none;
+  padding-left: 0;
+}
