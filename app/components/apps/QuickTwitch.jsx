@@ -3,39 +3,41 @@ import styles from './QuickTwitch.css';
 import AppFeature from '../AppFeature';
 import featureStyles from '../AppFeature.css';
 
-let features = [
+const features = [
   {
     title: "Ultra Fast",
     text: "Fast to launch and always ready to go.",
     color: "#FA810D",
-    imageURL: "../assets/bolt.svg"
+    image: "bolt.svg"
   },
   {
     title: "Ultra Minimal",
     text: "See who's on and launch their stream. That's it.",
     color: "#DDD",
-    imageURL: "../assets/circle.svg"
+    image: "circle.svg"
   },
   {
     title: "Ultra Efficient",
     text: "Uses up to 25% less power than a browser.",
     color: "#4CD967",
-    imageURL: "../assets/battery.svg"
+    image: "battery.svg"
   },
   {
     title: "Ad Free",
     text: "Raw video stream with no ads injected.",
     color: "#FFE051",
-    imageURL: "../assets/block.svg"
+    image: "block.svg"
   },
   {
     title: "Open Source",
     text: "Check it out",
     url: "https://github.com/mhmiles/quicktwitch",
     color: "#8FB8ED",
-    imageURL: "../assets/github.svg"
+    image: "github.svg"
   }
 ]
+
+let assetsPath = require.context('../../assets', true, /\.(png|svg)$/);
 
 export default class QuickTwitch extends React.Component {
   render() {
@@ -46,19 +48,19 @@ export default class QuickTwitch extends React.Component {
         <div className={styles.devices}>
           <div className={styles.spacer}/>
           <div className={styles.app}>
-            <img src="../../assets/QuickTwitch/QuickTwitch.png"/>
+            <img src={require("../../assets/QuickTwitch/QuickTwitch.png")}/>
           </div>
           <div className={styles.vlc}>
-            <img src="../../assets/QuickTwitch/vlc.png"/>
+            <img src={require("../../assets/QuickTwitch/vlc.png")}/>
           </div>
           <div className={styles.spacer}/>
         </div>
         <div className={styles.details}>
           <div className={featureStyles.featureContainer}>
             {features.map((feature, index) => {
-              let {title, text, color, imageURL, url} = feature;
-              
-              return <AppFeature key={index} text={text} title={title} color={color} imageURL={imageURL} url={url}/>
+              let {title, text, color, image, url} = feature;
+
+              return <AppFeature key={index} text={text} title={title} color={color} imageURL={assetsPath('./'+image)} url={url}/>
             })}
           </div>
         </div>
