@@ -13,6 +13,7 @@ module.exports = {
     publicPath: '/',
     filename: './bundle.js'
   },
+  context: path.resolve(__dirname + '/app/assets'),
   module: {
     loaders:[
       { test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader' },

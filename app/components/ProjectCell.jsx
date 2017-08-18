@@ -8,9 +8,7 @@ function importAll(r) {
   return r.keys().map(r);
 }
 
-const images = importAll(require.context('../assets/', false, /\.(png|svg)$/));
-console.log(images)
-
+let assetsPath = require.context('../assets', true, /\.(png|svg)$/);
 
 export default class ProjectCell extends React.Component {
   static propTypes = {
@@ -36,11 +34,11 @@ export default class ProjectCell extends React.Component {
 const ProjectLink = ({name, href, image, onClick}) => {
   return href.startsWith("/") ?
     <Link to={href} onClick={onClick}>
-      <img className={styles.projectImage} src={"../assets/"+image} />
+      <img className={styles.projectImage} src={assetsPath('./'+image)} />
       {name}
     </Link> :
     <a href={href} target="_blank" onClick={onClick}>
-      <img className={styles.projectImage} src={"../assets/"+image} />
+      <img className={styles.projectImage} src={assetsPath('./'+image)} />
       {name}
     </a>
 }
