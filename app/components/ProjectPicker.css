@@ -1,10 +1,21 @@
 
-.project-picker {
+.projectPicker {
   height: 120px;
   width: 100%;
-  background-color: #DDD;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   display: flex;
   flex-wrap: nowrap;
+  overflow-x: auto;
+  margin: 0;
+  -webkit-user-select: none;
+  user-select: none;
+  padding: 5px 0 5px 10px;
+  color: #DDD;
+}
+
+.projectPicker li:not(:first-child) {
+  margin-left: 20px;
 }
 
 ol {

@@ -1,24 +1,20 @@
-import React, {PropTypes} from 'react';
+import React from 'react';
 import ProjectCell from './ProjectCell'
 
-require('./ProjectPicker.css');
+import styles from './ProjectPicker.css'
 
 export default class ProjectPicker extends React.Component {
-  static propTypes = {
-    projects: PropTypes.array.isRequired
-  }
-
   constructor(props) {
     super(props);
   }
 
   render() {
-    let projects = this.props.projects
+    let { projects, onProjectClick } = this.props;
 
     return (
-      <ol className="project-picker">
-        {projects.map((project, index) => {
-          return <ProjectCell key={index} title={project.title}/>
+      <ol className={styles.projectPicker}>
+        {Object.keys(projects).map((key, index) => {
+          return <ProjectCell key={index} project={projects[key]} onProjectClick={onProjectClick}/>
         })}
       </ol>
     );

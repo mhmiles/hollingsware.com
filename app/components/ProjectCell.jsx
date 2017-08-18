@@ -1,10 +1,12 @@
-import React, {PropTypes} from 'react';
-
-require('./ProjectCell.css');
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './ProjectCell.css'
+import { Link } from 'react-router-dom'
+import _ from 'lodash'
 
 export default class ProjectCell extends React.Component {
   static propTypes = {
-    title: PropTypes.string.isRequired
+    project: PropTypes.object.isRequired
   }
 
   constructor(props) {
@@ -12,13 +14,25 @@ export default class ProjectCell extends React.Component {
   }
 
   render() {
-    let {title, image} = this.props
+    let { onProjectClick } = this.props
+    let { title, href, image } = this.props.project
 
     return (
-      <li className="project-cell">
-        <img className="project-image" src={"../assets/"+title+".png"} />
-        {title}
+      <li className={styles.projectCell}>
+        <ProjectLink name={title} href={href} image={image} onClick={onProjectClick}/>
       </li>
     );
   }
+}
+
+const ProjectLink = ({name, href, image, onClick}) => {
+  return href.startsWith("/") ?
+    <Link to={href} onClick={onClick}>
+      <img className={styles.projectImage} src={"../assets/"+image} />
+      {name}
+    </Link> :
+    <a href={href} target="_blank" onClick={onClick}>
+      <img className={styles.projectImage} src={"../assets/"+image} />
+      {name}
+    </a>
 }

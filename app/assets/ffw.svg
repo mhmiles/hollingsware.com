@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>ffw</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ffw" fill="#000000">
+            <g id="Group" transform="translate(23.000000, 32.000000)">
+                <polygon id="Triangle" transform="translate(19.000000, 28.500000) rotate(90.000000) translate(-19.000000, -28.500000) " points="19 10.3636364 47.2857143 46.6363636 -9.28571429 46.6363636"></polygon>
+                <polygon id="Triangle" transform="translate(55.000000, 28.500000) rotate(90.000000) translate(-55.000000, -28.500000) " points="55 10.3636364 83.2857143 46.6363636 26.7142857 46.6363636"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

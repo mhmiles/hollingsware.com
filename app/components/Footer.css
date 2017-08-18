@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 10px 0;
+  background-color: #DDD;
+  text-align: center;
+  color: #777
+}
+
+.footer * {
+  margin: 5px 20px;
+}

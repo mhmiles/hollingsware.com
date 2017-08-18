@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>bolt</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bolt" fill="#000000">
+            <g id="Group" transform="translate(37.000000, 0.000000)">
+                <polygon id="Path" transform="translate(20.498944, 80.707152) rotate(-10.000000) translate(-20.498944, -80.707152) " points="34.4198691 117.029236 6.57801943 44.3850677 34.4198691 61.8556701"></polygon>
+                <polygon id="Path" transform="translate(25.020924, 38.175695) scale(-1, -1) rotate(-10.000000) translate(-25.020924, -38.175695) " points="38.9418485 74.4977792 11.0999988 1.85361038 38.9418485 19.3242128"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

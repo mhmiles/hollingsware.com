@@ -1,0 +1,84 @@
+.download {
+  display: none;
+}
+
+.hero {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #222;
+}
+
+.hero h1 {
+  margin: 0;
+  font-weight: 100;
+  font-size: 48;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 24;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.iphone {
+  width: 80vw;
+  height: 100vw;
+}
+
+.watch {
+  width: 200px;
+  align-self: flex-end;
+  margin-left: -80px;
+}
+
+@media (max-width: 767px) {
+  .download_wide {
+    display: none;
+  }
+
+  .download {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .devices > * {
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width:768px) {
+  .iphone {
+    max-width: 400px;
+    max-height: 500px;
+  }
+}
+
+.devices {
+  padding-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.devices > *:not(:last-child) {
+  margin-right: 80px;
+}
+
+.downloadImage {
+  width: 240px;
+}
+
+.details {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.spacer {
+  flex: 1;
+}

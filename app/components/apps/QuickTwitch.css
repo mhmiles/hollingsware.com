@@ -1,0 +1,92 @@
+.hero {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: white;
+}
+
+.hero h1 {
+  margin: 0;
+  font-weight: 100;
+  font-size: 48;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 24;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.app {
+  width: 60%;
+  z-index: 10;
+}
+
+.app img {
+  width: 100%;
+}
+
+.vlc {
+  margin-left: -80px;
+  width: 40%;
+}
+
+.vlc img {
+  width: 100%;
+}
+
+.windows {
+  margin: 20px 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (max-width: 767px) {
+  .devices {
+    align-items: center;
+    margin: 0;
+  }
+
+  .devices > * {
+    margin-right: 0 !important;
+  }
+
+  .app {
+    width: 70%;
+  }
+
+  .vlc {
+    margin-left: -40px;
+    width: 30%;
+  }
+}
+
+@media (min-width:768px) {
+}
+
+.devices {
+  padding-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.downloadImage {
+  width: 240px;
+}
+
+.details {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.spacer {
+  flex: 1;
+}

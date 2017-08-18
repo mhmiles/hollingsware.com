@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-Original</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M176.10223,1.42108547e-14 L335.89777,1.42108547e-14 C386.60557,1.42108547e-14 411.959465,1.42108547e-14 439.25197,8.629795 C469.05071,19.47566 492.524375,42.94929 503.37024,72.748066 C512,100.040465 512,125.394381 512,176.10221 L512,335.89779 C512,386.60562 512,411.959535 503.37024,439.251935 C492.524375,469.050725 469.05071,492.52432 439.25197,503.370205 C411.959465,512 386.60557,512 335.89777,512 L176.10223,512 C125.39443,512 100.040535,512 72.748032,503.370205 C42.9492905,492.52432 19.4756265,469.050725 8.62976,439.251935 C0,411.959535 0,386.60562 0,335.89779 L0,176.10221 C0,125.394381 0,100.040465 8.62976,72.748083 C19.4756265,42.94931 42.9492905,19.47566 72.748032,8.629795 C100.040535,0 125.39443,0 176.10223,0 L176.10223,0" id="path-1"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#D16AF9" offset="0%"></stop>
+            <stop stop-color="#B04EE6" offset="48.9656409%"></stop>
+            <stop stop-color="#842EC4" offset="100%"></stop>
+        </linearGradient>
+        <path d="M130.841367,224 L208,224 L208,0 L5.68434189e-14,0 L5.68434189e-14,224 L73.899046,224 C71.7823061,213.395826 70.6191371,200.813037 69.3333644,187.2 C65.6624549,148.334476 65.3011448,117.866667 102.39244,117.866667 C139.483735,117.866667 139.158507,148.65515 135.451515,187.2 C134.147296,200.761115 132.975712,213.362131 130.841367,224 Z" id="path-4"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-6">
+            <stop stop-color="#B956EB" offset="0%"></stop>
+            <stop stop-color="#B04EE6" offset="47.1343994%"></stop>
+            <stop stop-color="#A143DA" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-Original">
+            <g id="Group-3">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g mask="url(#mask-2)">
+                    <g transform="translate(0.000000, -47.000000)">
+                        <rect id="Rectangle-2" fill="url(#linearGradient-3)" x="0" y="47" width="512" height="512"></rect>
+                        <g id="Group-2" stroke-width="1" fill="none" transform="translate(96.000000, 143.000000)">
+                            <circle id="Oval-3" fill="#FFFFFF" style="mix-blend-mode: screen;" cx="160" cy="160" r="160"></circle>
+                            <g id="Group" transform="translate(56.000000, 40.000000)">
+                                <path d="M102.394766,235.2 C120.890885,235.2 122.715439,213.884896 125.281818,187.2 C127.848197,160.515104 128.073355,139.2 102.394766,139.2 C76.7161772,139.2 76.9663149,160.293099 79.5077138,187.2 C82.0491127,214.106901 83.8986465,235.2 102.394766,235.2 Z" id="Oval" fill="#000000"></path>
+                                <circle id="Oval-2" fill="#000000" cx="102.4" cy="107.2" r="24"></circle>
+                                <g id="Oval-3-+-Combined-Shape-Mask">
+                                    <g id="Inner-+-Outer-Mask" transform="translate(0.000000, 0.000000)">
+                                        <mask id="mask-5" fill="white">
+                                            <use xlink:href="#path-4"></use>
+                                        </mask>
+                                        <g id="Mask"></g>
+                                        <circle id="Inner" stroke="#000000" stroke-width="12.5" mask="url(#mask-5)" cx="103.733333" cy="113.866667" r="60"></circle>
+                                        <circle id="Outer" stroke="#000000" stroke-width="12.5" mask="url(#mask-5)" cx="102.4" cy="115.2" r="93.3333333"></circle>
+                                    </g>
+                                </g>
+                            </g>
+                            <circle id="Oval-3" fill="url(#linearGradient-6)" style="mix-blend-mode: screen;" cx="160" cy="160" r="160"></circle>
+                        </g>
+                        <rect id="Rectangle-3" fill="#FFFFFF" x="236" y="0" width="40" height="100"></rect>
+                        <polygon id="Triangle" fill="#FFFFFF" transform="translate(256.000000, 110.000000) scale(1, -1) translate(-256.000000, -110.000000) " points="256 90 296 130 216 130"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
