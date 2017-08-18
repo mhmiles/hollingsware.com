@@ -4,6 +4,14 @@ import styles from './ProjectCell.css'
 import { Link } from 'react-router-dom'
 import _ from 'lodash'
 
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(require.context('../assets/', false, /\.(png|svg)$/));
+console.log(images)
+
+
 export default class ProjectCell extends React.Component {
   static propTypes = {
     project: PropTypes.object.isRequired

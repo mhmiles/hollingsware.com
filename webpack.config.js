@@ -32,7 +32,8 @@ module.exports = {
      ]
    },
       { test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.svg$/, loader: 'raw-loader' }
+      { test: /\.svg$/, loader: 'raw-loader' },
+      { test: /\.png$/, loader: 'file-loader' }
     ]
   },
   resolve: {
