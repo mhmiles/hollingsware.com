@@ -7,24 +7,20 @@ export default class AppFeature extends React.Component {
   render() {
     let { imageURL, title, text, color, className, url } = this.props;
 
-    let style = {
-      backgroundColor: color,
-      border: `3px solid ${Color(color).lighten(0.1).string()}`
-    }
 
     let textElement = url === undefined ?
       (<span className={styles.text}>{text}</span>) :
       (<a className={styles.text} href={url} target="_blank">{text}</a>)
 
     return (
-      <div className={styles.feature} style={style}>
+      <div className={styles.feature}>
         <div className={styles.imageContainer}>
           <img src={imageURL} className={styles.backgroundImage}/>
         </div>
         <span className={styles.title}>{title}</span>
-        <div style={{flex: 0.5}}/>
-        {textElement}
-        <div style={{flex: 1}}/>
+        <div className={styles.details}>
+          {textElement}
+        </div>
       </div>
     );
   }

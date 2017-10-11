@@ -9,10 +9,10 @@ export default class ProjectPicker extends React.Component {
   }
 
   render() {
-    let { projects, onProjectClick } = this.props;
+    let { projects, onProjectClick, height } = this.props;
 
     return (
-      <ol className={styles.projectPicker}>
+      <ol className={styles.projectPicker} style={{height: height}}>
         {Object.keys(projects).map((key, index) => {
           return <ProjectCell key={index} project={projects[key]} onProjectClick={onProjectClick}/>
         })}

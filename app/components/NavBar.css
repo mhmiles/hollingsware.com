@@ -1,19 +1,13 @@
 .navbarHeader {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  flex-direction: column;
+  align-items: stretch;
   -webkit-user-select: none;
   user-select: none;
-  padding-top: 2px;
-  transition: color 200ms ease-in-out;
-}
-
-.navbarCollapse {
-  overflow: hidden;
-  transition: height 4s ease-in-out
+  transition: color 1s ease-in-out;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: inherit;
 }
 
 .navbar ul {
@@ -21,67 +15,116 @@
   -webkit-margin-after: 0;
 }
 
-@media (max-width:768px) {
-  .navbarLeft {
-    width: 100%;
-  }
-
-  .navbarRight {
-    width: 100%;
-    flex-direction: column !important;
-    margin-left: 10px;
-  }
-
-  .navbarRight li {
-    font-weight: 200;
-    margin-top: 12px;
-  }
-
-  .navbarCollapse {
-    height: 0
-  }
-
-  .navbarOpen {
-    width: 100%;
-    border-top: 1px solid rgba(200, 200, 200, 0.4);
-  }
+.navOpen {
+  border-top-style: solid;
+  border-top-width: 0;
 }
 
-.spacer {
-  flex: 1;
-}
-
-.navbarLeft {
-  display: flex;
-  padding-left: 5px;
-}
-
-.navbarRight {
+.navbarStatic {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  padding-left: 0;
-  padding-bottom: 4px;
+  align-items: flex-end;
+  padding-left: 5px;
+  flex-shrink: 1;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
-.navbarRight li {
-  font-weight: 200;
-  margin-right: 15px;
-}
-
-.navbarRight li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.navbarRight li a:visited {
-  color: inherit;
+.logoLink {
+  margin-right: 30px;
 }
 
 .navbar ul {
   list-style-type: none;
 }
 
-svg :global(#logotext) {
-  fill: black;
-  transition: fill 1s ease-in-out;
+.navItem {
+  text-decoration: none;
+  color: inherit;
+  font-size: 24px;
+  font-weight: 200;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.navItem:visited {
+  color: inherit;
+}
+
+.collapseContainer {
+  width: 100%;
+  overflow: hidden;
+  transition: height 500ms ease-in-out;
+}
+
+.navOpenMore {
+  height: 140px;
+}
+
+.navClosed {
+  height: 0;
+}
+
+.appPickerClosed {
+  height: 0;
+}
+
+.appPickerOpen {
+  height: 140px;
+}
+
+.appPickerCollapse {
+  width: 100%;
+  overflow: hidden;
+  transition: height 500ms ease-in-out;
+}
+
+.wide {
+  margin-bottom: 5px;
+}
+
+@media (max-width:576px) {
+  .navItem {
+    display: block;
+    padding: 8px 0 8px 10px;
+    margin: 0;
+    border-top: 1px solid;
+  }
+
+  .wide {
+    display: none;
+  }
+
+  .navOpenMore {
+    height: 221px;
+  }
+
+  .navOpen {
+    height: 80px;
+  }
+}
+
+@media (min-width: 577px) {
+  .thin {
+    display: none;
+  }
+
+  .navClosed {
+    height: auto;
+  }
+
+  .navItem {
+    margin-left: 20px;
+  }
+
+  .appPickerCollapse {
+    border-bottom: 1px solid;
+  }
+
+  .navbarHeader {
+    border-bottom-width: 0;
+  }
 }

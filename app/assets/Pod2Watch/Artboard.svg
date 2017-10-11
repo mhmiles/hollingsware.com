@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="253px" height="290px" viewBox="0 0 253 290" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M26.1682735,44.9935205 L41.6,44.9935205 L41.6,0 L5.68434189e-14,0 L5.68434189e-14,44.9935205 L14.7798092,44.9935205 C14.3564612,42.8635244 14.1238274,40.336096 13.8666729,37.6017279 C13.132491,29.795046 13.060229,23.675162 20.4784879,23.675162 C27.8967469,23.675162 27.8317014,29.8594579 27.090303,37.6017279 C26.8294591,40.3256668 26.5951424,42.8567563 26.1682735,44.9935205 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#B956EB" offset="0%"></stop>
+            <stop stop-color="#B04EE6" offset="47.1343994%"></stop>
+            <stop stop-color="#A143DA" offset="100%"></stop>
+        </linearGradient>
+        <path d="M26.1682735,44.9935205 L41.6,44.9935205 L41.6,0 L5.68434189e-14,0 L5.68434189e-14,44.9935205 L14.7798092,44.9935205 C14.3564612,42.8635244 14.1238274,40.336096 13.8666729,37.6017279 C13.132491,29.795046 13.060229,23.675162 20.4784879,23.675162 C27.8967469,23.675162 27.8317014,29.8594579 27.090303,37.6017279 C26.8294591,40.3256668 26.5951424,42.8567563 26.1682735,44.9935205 Z" id="path-4"></path>
+        <path d="M26.1682735,44.9935205 L41.6,44.9935205 L41.6,0 L5.68434189e-14,0 L5.68434189e-14,44.9935205 L14.7798092,44.9935205 C14.3564612,42.8635244 14.1238274,40.336096 13.8666729,37.6017279 C13.132491,29.795046 13.060229,23.675162 20.4784879,23.675162 C27.8967469,23.675162 27.8317014,29.8594579 27.090303,37.6017279 C26.8294591,40.3256668 26.5951424,42.8567563 26.1682735,44.9935205 Z" id="path-6"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <g id="Group-3" transform="translate(95.000000, 26.000000)">
+                <g id="Group-2" transform="translate(0.000000, 28.723542)">
+                    <ellipse id="Oval-3" fill="#FFFFFF" style="mix-blend-mode: screen;" cx="32" cy="32.1382289" rx="32" ry="32.1382289"></ellipse>
+                    <g id="Group" transform="translate(11.200000, 8.034557)">
+                        <path d="M20.4789532,47.2431965 C24.1781771,47.2431965 24.5430878,42.9617609 25.0563636,37.6017279 C25.5696394,32.2416948 25.614671,27.9602592 20.4789532,27.9602592 C15.3432354,27.9602592 15.393263,32.197102 15.9015428,37.6017279 C16.4098225,43.0063538 16.7797293,47.2431965 20.4789532,47.2431965 Z" id="Oval" fill="#000000"></path>
+                        <ellipse id="Oval-2" fill="#000000" cx="20.48" cy="21.5326134" rx="4.8" ry="4.82073434"></ellipse>
+                        <g id="Oval-3-+-Combined-Shape-Mask">
+                            <g id="Inner-+-Outer-Mask" transform="translate(0.000000, 0.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Mask"></g>
+                                <ellipse id="Inner" stroke="#000000" stroke-width="2.5" mask="url(#mask-2)" cx="20.7466667" cy="22.8717063" rx="12" ry="12.0518359"></ellipse>
+                                <ellipse id="Outer" stroke="#000000" stroke-width="2.5" mask="url(#mask-2)" cx="20.48" cy="23.1395248" rx="18.6666667" ry="18.7473002"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                    <ellipse id="Oval-3" fill="url(#linearGradient-3)" style="mix-blend-mode: screen;" cx="32" cy="32.1382289" rx="32" ry="32.1382289"></ellipse>
+                </g>
+                <rect id="Rectangle-3" fill="#FFFFFF" x="28" y="0" width="8" height="20.0863931"></rect>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(32.000000, 22.095032) scale(1, -1) translate(-32.000000, -22.095032) " points="32 18.0777538 40 26.112311 24 26.112311"></polygon>
+            </g>
+            <g id="Group-3-Copy" transform="translate(221.000000, 159.000000)">
+                <g id="Group-2" transform="translate(0.000000, 28.723542)">
+                    <ellipse id="Oval-3" fill="#FFFFFF" style="mix-blend-mode: screen;" cx="32" cy="32.1382289" rx="32" ry="32.1382289"></ellipse>
+                    <g id="Group" transform="translate(11.200000, 8.034557)">
+                        <path d="M20.4789532,47.2431965 C24.1781771,47.2431965 24.5430878,42.9617609 25.0563636,37.6017279 C25.5696394,32.2416948 25.614671,27.9602592 20.4789532,27.9602592 C15.3432354,27.9602592 15.393263,32.197102 15.9015428,37.6017279 C16.4098225,43.0063538 16.7797293,47.2431965 20.4789532,47.2431965 Z" id="Oval" fill="#000000"></path>
+                        <ellipse id="Oval-2" fill="#000000" cx="20.48" cy="21.5326134" rx="4.8" ry="4.82073434"></ellipse>
+                        <g id="Oval-3-+-Combined-Shape-Mask">
+                            <g id="Inner-+-Outer-Mask" transform="translate(0.000000, 0.000000)">
+                                <mask id="mask-5" fill="white">
+                                    <use xlink:href="#path-4"></use>
+                                </mask>
+                                <g id="Mask"></g>
+                                <ellipse id="Inner" stroke="#000000" stroke-width="2.5" mask="url(#mask-5)" cx="20.7466667" cy="22.8717063" rx="12" ry="12.0518359"></ellipse>
+                                <ellipse id="Outer" stroke="#000000" stroke-width="2.5" mask="url(#mask-5)" cx="20.48" cy="23.1395248" rx="18.6666667" ry="18.7473002"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                    <ellipse id="Oval-3" fill="url(#linearGradient-3)" style="mix-blend-mode: screen;" cx="32" cy="32.1382289" rx="32" ry="32.1382289"></ellipse>
+                </g>
+                <rect id="Rectangle-3" fill="#FFFFFF" x="28" y="0" width="8" height="20.0863931"></rect>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(32.000000, 22.095032) scale(1, -1) translate(-32.000000, -22.095032) " points="32 18.0777538 40 26.112311 24 26.112311"></polygon>
+            </g>
+            <g id="Group-3-Copy-2" transform="translate(-32.000000, 145.000000)">
+                <g id="Group-2" transform="translate(0.000000, 28.723542)">
+                    <ellipse id="Oval-3" fill="#FFFFFF" style="mix-blend-mode: screen;" cx="32" cy="32.1382289" rx="32" ry="32.1382289"></ellipse>
+                    <g id="Group" transform="translate(11.200000, 8.034557)">
+                        <path d="M20.4789532,47.2431965 C24.1781771,47.2431965 24.5430878,42.9617609 25.0563636,37.6017279 C25.5696394,32.2416948 25.614671,27.9602592 20.4789532,27.9602592 C15.3432354,27.9602592 15.393263,32.197102 15.9015428,37.6017279 C16.4098225,43.0063538 16.7797293,47.2431965 20.4789532,47.2431965 Z" id="Oval" fill="#000000"></path>
+                        <ellipse id="Oval-2" fill="#000000" cx="20.48" cy="21.5326134" rx="4.8" ry="4.82073434"></ellipse>
+                        <g id="Oval-3-+-Combined-Shape-Mask">
+                            <g id="Inner-+-Outer-Mask" transform="translate(0.000000, 0.000000)">
+                                <mask id="mask-7" fill="white">
+                                    <use xlink:href="#path-6"></use>
+                                </mask>
+                                <g id="Mask"></g>
+                                <ellipse id="Inner" stroke="#000000" stroke-width="2.5" mask="url(#mask-7)" cx="20.7466667" cy="22.8717063" rx="12" ry="12.0518359"></ellipse>
+                                <ellipse id="Outer" stroke="#000000" stroke-width="2.5" mask="url(#mask-7)" cx="20.48" cy="23.1395248" rx="18.6666667" ry="18.7473002"></ellipse>
+                            </g>
+                        </g>
+                    </g>
+                    <ellipse id="Oval-3" fill="url(#linearGradient-3)" style="mix-blend-mode: screen;" cx="32" cy="32.1382289" rx="32" ry="32.1382289"></ellipse>
+                </g>
+                <rect id="Rectangle-3" fill="#FFFFFF" x="28" y="0" width="8" height="20.0863931"></rect>
+                <polygon id="Triangle" fill="#FFFFFF" transform="translate(32.000000, 22.095032) scale(1, -1) translate(-32.000000, -22.095032) " points="32 18.0777538 40 26.112311 24 26.112311"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

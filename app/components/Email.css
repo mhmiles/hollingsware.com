@@ -1,0 +1,12 @@
+.email {
+  transition: fill 300ms ease-in-out;
+}
+
+.graphic {
+  transition: fill 300ms ease-in-out, stroke 300ms ease-in-out;
+}
+
+.graphic:hover {
+  fill: white;
+  stroke: white;
+}

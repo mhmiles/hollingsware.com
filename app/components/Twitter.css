@@ -1,0 +1,11 @@
+.twitter {
+  transition: fill 300ms ease-in-out;
+}
+
+.graphic {
+  transition: fill 300ms ease-in-out;
+}
+
+.graphic:hover {
+  fill: #19A1F2;
+}

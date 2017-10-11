@@ -1,17 +1,19 @@
 .feature {
   position: relative;
-  border-radius: 10px;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255,255,255,0.7);
   width: 95%;
-  height: 200px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 3px #999;
+  height: 140px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
   text-align: center;
-  padding: 20px;
+  padding: 10px 20px 10px;
   box-sizing: border-box;
+  border: 2px solid rgba(255, 255, 255, 0.2);
   color: #222;
 }
 
@@ -29,17 +31,42 @@
 
 .imageContainer img {
   opacity: 0.1;
-  width: 200px;
-  height: 200px;
+  height: 100%;
 }
 
 .featureContainer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 0 auto;
-  padding: 20px 0;
+  margin: 0 auto 10px;
   box-sizing: border-box;
+}
+
+.details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.title {
+  z-index: 10;
+  font-weight: 200;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.text {
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text:visited {
+  color: inherit;
 }
 
 @media (min-width: 840px) {
@@ -48,20 +75,14 @@
   }
 
   .feature {
-    width: 48%;
+    height: 120px;
+    width: calc(50% - 15px)
   }
 }
 
 @media (min-width: 980px) {
   .featureContainer {
     width: 940px;
-  }
-
-  .feature {
-    width: 47%;
-    height: 200px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 3px #999;
   }
 }
 
@@ -71,25 +92,7 @@
   }
 
   .feature {
-    width: 31%;
-    height: 200px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 3px #999;
+    width: calc(33.33% - 13.33px);
+    height: 140px;
   }
-}
-
-.title {
-  z-index: 10;
-  font-weight: 200;
-  font-size: 36px;
-}
-
-.text {
-  z-index: 10;
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.text:visited {
-  color: inherit;
 }

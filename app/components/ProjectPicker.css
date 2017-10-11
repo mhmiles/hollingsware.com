@@ -1,21 +1,22 @@
 
 .projectPicker {
-  height: 120px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.72) 15%, rgba(0,0,0,0.72) 85%, rgba(0,0,0,0.8) 100%);
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: content-box;
+  -webkit-overflow-scrolling: touch;
   margin: 0;
   -webkit-user-select: none;
   user-select: none;
-  padding: 5px 0 5px 10px;
+  padding: 0 10px;
   color: #DDD;
 }
 
 .projectPicker li:not(:first-child) {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 ol {

@@ -4,10 +4,6 @@ import styles from './ProjectCell.css'
 import { Link } from 'react-router-dom'
 import _ from 'lodash'
 
-function importAll(r) {
-  return r.keys().map(r);
-}
-
 let assetsPath = require.context('../assets', true, /\.(png|svg)$/);
 
 export default class ProjectCell extends React.Component {
@@ -33,11 +29,11 @@ export default class ProjectCell extends React.Component {
 
 const ProjectLink = ({name, href, image, onClick}) => {
   return href.startsWith("/") ?
-    <Link to={href} onClick={onClick}>
+    <Link to={href} className={styles.projectLink} onClick={onClick}>
       <img className={styles.projectImage} src={assetsPath('./'+image)} />
       {name}
     </Link> :
-    <a href={href} target="_blank" onClick={onClick}>
+    <a href={href} className={styles.projectLink}  target="_blank" onClick={onClick}>
       <img className={styles.projectImage} src={assetsPath('./'+image)} />
       {name}
     </a>

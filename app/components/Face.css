@@ -1,0 +1,8 @@
+.circle {
+  fill: #00BBFF;
+  transition: fill 300ms ease-in-out;
+}
+
+.root:hover .circle {
+  fill: #00CCFF;
+}

@@ -1,19 +1,17 @@
-.fade {
-  height: 100%;
-  transition: background-color 1000ms ease-in-out;
-}
-
-.home {
-  background-color: white;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background-color: #DDD;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Avenir, "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  transition: background-color 1s ease-in-out;
 }
 
-.root {
-  transition: "background-color 1s ease-in-out";
-  display: "flex";
-  flex-direction: "column";
+.container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  min-height: 100vh;
 }

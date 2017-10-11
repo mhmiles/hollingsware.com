@@ -3,8 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  color: #222;
+  background: linear-gradient(to bottom, transparent 0%, transparent 90%, rgba(0,0,0,0.03) 95%, rgba(0,0,0,0.1) 100%);
 }
 
 .hero h1 {
@@ -15,68 +14,125 @@
 
 .hero h2 {
   margin: 0;
-  font-size: 24;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: normal;
   opacity: 0.8;
 }
-
-.iphone {
-  margin-top: 30px;
-  width: 80vw;
-  height: 100vw;
+.download {
+  display: none;
 }
 
-.watch {
-  width: 200px;
-  align-self: flex-end;
-  margin-left: -80px;
+.download_wide {
+  margin-left: 40px;
+  align-self: center;
 }
 
-@media (max-width: 767px) {
-  .download {
-    order: -5;
-  }
-
-  .devices {
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-
-  .devices > * {
-    margin-right: 0 !important;
-  }
-}
-
-@media (min-width:768px) {
-  .hero .iphone {
-    max-width: 400px;
-    max-height: 500px;
-  }
+.end_download {
+  margin: 10px 0 20px;
 }
 
 .devices {
-  padding-top: 40px;
   width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 30px;
+  overflow: hidden;
 }
 
-.devices > *:not(:last-child) {
-  margin-right: 80px;
+.iphone {
+  position: relative;
+  width: 360px;
+}
+
+.iphoneImage {
+  width: 100%;
+}
+
+.video {
+  width: 84.17%;
+  position: absolute;
+  top: 20.44%;
+  left: 7.5%;
+}
+
+.watch {
+  width: 180px;
+  margin-left: 20px;
+  z-index: 5;
 }
 
 .downloadImage {
-  width: 240px;
+  width: 180px;
 }
 
 .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  background-color: rgba(255,255,255,0.5);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .spacer {
   flex: 1;
+}
+
+@media (max-width: 1023px) {
+  .watch {
+    margin-left: -100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .iphone {
+    width: 240px;
+  }
+
+  .watch {
+    width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .download_wide {
+    display: none;
+  }
+
+  .download {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .devices {
+    flex-direction: row;
+    margin: 20px 20px 0;
+    padding: 0;
+  }
+
+  .iphone {
+    width: 66%;
+  }
+
+  .watch {
+    width: 33%;
+    margin-left: -10%;
+  }
+}
+
+.faq {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.faq:hover {
+  color: inherit;
 }

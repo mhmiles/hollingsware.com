@@ -6,14 +6,12 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 120px;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 140px;
   font-size: 16px;
-  border-radius: 8px;
 }
 
 .projectCell:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .projectCell a {
@@ -25,7 +23,10 @@
 }
 
 .projectImage {
-  width: 60%;
-  height: 60%;
+  width: 80px;
   margin-bottom: 5px;
+}
+
+.projectLink {
+  display: flex;
 }

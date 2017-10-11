@@ -1,0 +1,40 @@
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.help {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.phone {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.phoneContainer {
+  max-width: 300px;
+}
+
+.contact {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.contactItem {
+  width: 120px;
+}

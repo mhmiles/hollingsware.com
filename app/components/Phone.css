@@ -1,0 +1,16 @@
+@-webkit-keyframes cry {
+  0% { opacity: 1; }
+  25% { opacity: 0.8; }
+  50% { opacity: 0.2; }
+  75% { opacity: 0.8; }
+  100% { opacity: 1; }
+}
+
+.tear1 {
+  animation: cry 4s infinite;
+}
+
+.tear2 {
+  animation: cry 4s infinite;
+  animation-delay: 1.2s;
+}

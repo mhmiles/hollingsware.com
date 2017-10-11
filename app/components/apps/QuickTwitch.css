@@ -3,8 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  color: white;
+  background: linear-gradient(to bottom, transparent 0%, transparent 90%, rgba(0,0,0,0.03) 95%, rgba(0,0,0,0.1) 100%);
 }
 
 .hero h1 {
@@ -15,8 +14,8 @@
 
 .hero h2 {
   margin: 0;
-  font-size: 24;
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: normal;
   opacity: 0.8;
 }
 
@@ -69,7 +68,7 @@
 }
 
 .devices {
-  padding-top: 40px;
+  margin-top: 30px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -81,12 +80,31 @@
 }
 
 .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+  background-color: rgba(255,255,255,0.6);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
 .spacer {
   flex: 1;
+}
+
+.faq {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+.faq:hover {
+  color: inherit;
 }
