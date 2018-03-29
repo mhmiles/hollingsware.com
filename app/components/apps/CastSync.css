@@ -7,18 +7,18 @@
   color: #333;
 }
 
-h1 {
+.hero h1 {
   text-align: center;
   margin: 0;
   font-weight: 200;
   font-size: 48;
 }
 
-h2 {
+.hero h2 {
   text-align: center;
   margin: 0;
   font-size: 21px;
-  font-weight: 800;
+  font-weight: 700;
   opacity: 0.6;
   margin-bottom: 30px;
 }
