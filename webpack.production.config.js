@@ -30,23 +30,30 @@ module.exports = {
           }
         ]
       },
-      { test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, use: 'babel-loader' },
-      { test: /\.(m4v)$/, use: 'file-loader' },
       {
-      // match image files
-      test: /\.(jpe?g|png|svg|gif|ico)$/,
+        test: /\.js[x]?$/,
+        include: path.resolve(__dirname, 'app'),
+        exclude: /node_modules/,
+        use: 'babel-loader'
+      },
+      {
+        test: /\.(m4v)$/,
+        use: 'file-loader'
+      },
+      {
+        // match image files
+        test: /\.(jpe?g|png|svg|gif|ico)$/,
 
-      // match one of the loader's main parameters (sizes and placeholder)
-      resourceQuery: /[?&](sizes|placeholder)(=|&|\[|$)/,
+        // match one of the loader's main parameters (sizes and placeholder)
+        // resourceQuery: /[?&](sizes|placeholder)(=|&|\[|$)/,
 
-      use: [
-        'srcset-loader',
-        'svg-loader',
-        // any other loader
-        'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-        'image-webpack-loader?optimizationLevel=7&interlaced=false',
-      ],
-    }
+        use: [
+          'srcset-loader',
+          'svg-loader',
+          // any other loader
+          'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+        ],
+      }
     ]
   },
   resolve: {
