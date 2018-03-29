@@ -2,6 +2,7 @@ import React from 'react'
 import Phone from './Phone'
 import Twitter from './Twitter'
 import Email from './Email'
+import Line from './PixelLine'
 import styles from './Support.css'
 
 const contactColor = "#008844";
@@ -9,6 +10,7 @@ const contactColor = "#008844";
 export default () => {
   return (
     <div className={styles.support}>
+      <Line style={{top: 0, position: "absolute", backgroundColor: "rgba(0,0,0,0.15)"}} />
       <h1 className={styles.title}>
         I'm sorry my app didn't work
       </h1>

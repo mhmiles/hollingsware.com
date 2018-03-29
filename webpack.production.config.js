@@ -15,12 +15,13 @@ module.exports = {
   },
   context: path.resolve(__dirname + '/app/assets'),
   module: {
-    loaders:[
+    rules:[
       {
         test: /\.css$/,
         include: path.resolve(__dirname, 'app'),
         use: [
-          'style-loader', {
+          'style-loader',
+          {
             loader: 'css-loader',
             options: {
               modules: true,
@@ -29,14 +30,23 @@ module.exports = {
           }
         ]
       },
-      { test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, loader: 'babel-loader' },
-      { test: /\.(svg|m4v)$/, loader: 'file-loader' },
-      { test: /\.(jpg|png|ico)$/,
-        loader: 'url-loader',
-        options: {
-          limit: 25000,
-        }
-      }
+      { test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, use: 'babel-loader' },
+      { test: /\.(m4v)$/, use: 'file-loader' },
+      {
+      // match image files
+      test: /\.(jpe?g|png|svg|gif|ico)$/,
+
+      // match one of the loader's main parameters (sizes and placeholder)
+      resourceQuery: /[?&](sizes|placeholder)(=|&|\[|$)/,
+
+      use: [
+        'srcset-loader',
+        'svg-loader',
+        // any other loader
+        'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+        'image-webpack-loader?optimizationLevel=7&interlaced=false',
+      ],
+    }
     ]
   },
   resolve: {

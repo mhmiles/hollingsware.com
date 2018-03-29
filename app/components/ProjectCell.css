@@ -5,13 +5,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 140px;
+  width: 130px;
   font-size: 16px;
 }
 
 .projectCell:hover {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .projectCell a {

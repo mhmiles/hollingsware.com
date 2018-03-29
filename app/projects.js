@@ -1,40 +1,37 @@
 var projects = {
+  castsync: {
+    title: "CastSync",
+    href: "/apps/castsync",
+    backgroundColor: "#A5E2FB"
+  },
   mastercontrol: {
-    "title": "Master Control",
-    "href": "/apps/mastercontrol",
-    image: "mastercontrol.png",
-    backgroundColor: "#007AFF",
-    headerTextColor: "rgba(255, 255, 255, 0.5)"
+    title: "Master Control",
+    href: "/apps/mastercontrol",
+    backgroundColor: "#005EC4"
   },
   mastercaster: {
     title: "Master Caster",
     href: "/apps/mastercaster",
-    image: "mastercaster.png",
     backgroundColor: "#EEE",
     headerTextColor: "rgba(0, 0, 0, 0.4)"
   },
   pod2watch: {
     title: "Pod2Watch",
     href: "/apps/pod2watch",
-    image: "pod2watch.svg",
-    backgroundColor: "#AD4CE4"
+    backgroundColor: "#5C1685"
   },
   quicktwitch: {
     title: "QuickTwitch",
     href: "/apps/quicktwitch",
-    image: "quicktwitch.svg",
-    backgroundColor: "#4B367C",
-    headerTextColor: "rgba(255, 255, 255, 0.5)"
+    backgroundColor: "#4B367C"
   },
   bestdailylineup: {
     title: "BestDailyLineup",
     href: "http://bestdailylineup.com",
-    image: "bestdailylineup.png"
   },
   more: {
     title: "More",
     href: "https://www.github.com/mhmiles",
-    image: "more.png"
   }
 }
 

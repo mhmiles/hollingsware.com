@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Face.css'
 
-export default({className}) => {
+export default ({ className }) => {
   return (
     <div className={styles.root+" "+className}>
       <svg viewBox="0 0 42 42">

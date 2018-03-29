@@ -1,35 +1,28 @@
 import React from 'react';
 import styles from './AppFeature.css'
-import PropTypes from 'prop-types';
-import Color from 'color';
+import SVG from 'react-inlinesvg'
+import Line from './PixelLine'
 
-export default class AppFeature extends React.Component {
-  render() {
-    let { imageURL, title, text, color, className, url } = this.props;
+export default ({ feature }) => {
+  let { title, text, color, image, imageColor, url } = feature;
 
+  let textElement = url === undefined ?
+    (<span className={styles.text}>{text}</span>) :
+    (<a className={styles.text} href={url} target="_blank">{text}</a>)
 
-    let textElement = url === undefined ?
-      (<span className={styles.text}>{text}</span>) :
-      (<a className={styles.text} href={url} target="_blank">{text}</a>)
+  let assetsPath = require.context('../assets', true, /\.(png|svg)$/);
+  let imagePath =  assetsPath('./'+image)
 
-    return (
-      <div className={styles.feature}>
-        <div className={styles.imageContainer}>
-          <img src={imageURL} className={styles.backgroundImage}/>
-        </div>
-        <span className={styles.title}>{title}</span>
-        <div className={styles.details}>
-          {textElement}
-        </div>
+  return (
+    <div className={styles.feature}>
+      <div className={styles.title}>
+        <SVG className={styles.titleImage} wrapper={React.createFactory('div')} src={imagePath} style={{fill: imageColor}}/>
+        <span className={styles.titleText}>{title}</span>
       </div>
-    );
-  }
-}
-
-AppFeature.propTypes = {
-  imageURL: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
-  url: PropTypes.string
+      <div className={styles.details}>
+        {textElement}
+      </div>
+      <Line className={styles.featureLine} />
+    </div>
+  );
 }

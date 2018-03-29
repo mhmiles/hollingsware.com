@@ -2,22 +2,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 20px 20px;
-  background-color: rgba(255,255,255,0.8);
+  padding: 20px;
   text-align: center;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  color: #777;
   height: auto;
+  position: relative;
 }
 
 .appleTrademark {
-  font-size: 12px;
-  max-width: 600px;
+  font-size: 10px;
+  margin: 0px 40px;
+  max-width: 480px;
 }
 
 .bottomLinks {
-  font-size: 18px;
-  font-weight: 200;
+  font-size: 21px;
   margin-bottom: 20px;
 }
 
@@ -25,16 +23,13 @@
   text-decoration: none;
   color: inherit;
   margin: 0 10px;
+  opacity: 0.8;
 }
 
 .bottomLinks a:hover {
-  color: #555;
+  opacity: 1;
 }
 
 .bottomLinks * {
-  transition: color 300ms ease-in-out;
-}
-
-.bullet:hover {
-  color: white;
+  transition: opacity 300ms ease-in-out;
 }

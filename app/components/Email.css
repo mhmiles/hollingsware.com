@@ -1,12 +1,8 @@
-.email {
-  transition: fill 300ms ease-in-out;
-}
-
 .graphic {
-  transition: fill 300ms ease-in-out, stroke 300ms ease-in-out;
+  transition: fill 250ms ease-in-out, stroke 250ms ease-in-out;
 }
 
 .graphic:hover {
-  fill: white;
-  stroke: white;
+  fill: #BBB;
+  stroke: #BBB;
 }

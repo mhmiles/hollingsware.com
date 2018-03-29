@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import styles from './main.css'
 import Home from './components/Home'
+import CastSync from './components/apps/CastSync'
 import MasterControl from './components/apps/MasterControl'
 import MasterCaster from './components/apps/MasterCaster'
 import QuickTwitch from './components/apps/QuickTwitch'
@@ -15,122 +16,108 @@ import Support from './components/Support'
 import NavBar from './components/NavBar'
 import BodyStyle from 'body-style'
 import NotFound from './components/NotFound'
-import Faq from './components/Faq'
+
+let appNames = [
+  "castsync",
+  "mastercontrol",
+  "mastercaster",
+  "quicktwitch",
+  "pod2watch",
+];
 
 render(
   <BrowserRouter>
-  <Switch>
-    <Route exact path="/">
-      <div className={styles.container}>
-        <BodyStyle style={{
-          backgroundColor: "transparent"
-        }}/>
-        <NavBar textColor="#555"/>
-        <Home/>
-        <Footer/>
-      </div>
-    </Route>
-    <Route exact path="/apps">
-      <div className={styles.container}>
-        <BodyStyle style={{
-          backgroundColor: "transparent"
-        }}/>
-        <NavBar isNavVisible={true} textColor="#555"/>
-        <Home/>
-        <Footer/>
-      </div>
-    </Route>
-    <Route path="/contact">
-      <div className={styles.container}>
-        <BodyStyle style={{
-          backgroundColor: "#BBFFFF"
-        }}/>
-        <Switch>
-          <Route exact path="/contact/apps" render={({location, match}) => {
-            return (<NavBar textColor="rgba(0,0,0,0.3)" isNavVisible={true}/>)
-          }}/>
-          <Route render={({location, match}) => {
-            return (<NavBar textColor="rgba(0,0,0,0.3)"/>)
-          }}/>
-        </Switch>
-        <Contact/>
-        <Footer basePath="/contact"/>
-      </div>
-    </Route>
-    <Route path="/support">
-      <div className={styles.container}>
-        <BodyStyle style={{
-          backgroundColor: "#77FFAA"
-        }}/>
-        <Switch>
-          <Route exact path="/support/apps" render={({location, match}) => {
-            return (<NavBar textColor="rgba(0,0,0,0.3)" isNavVisible={true}/>)
-          }}/>
-          <Route render={({location, match}) => {
-            return (<NavBar textColor="rgba(0,0,0,0.3)"/>)
-          }}/>
-        </Switch>
-        <Support/>
-        <Footer basePath="/support"/>
-      </div>
-    </Route>
-    <Route path="/apps/:id" render={({location, match}) => {
-      let projectName = match.params.id.toLowerCase();
-      let project = projects[projectName];
-      let backgroundColor = 'white'
-
-      if (project !== undefined) {
-        backgroundColor = projects[projectName].backgroundColor;
-      }
-      let textColor = Color(backgroundColor).luminosity() > 0.3
-        ? "black"
-        : "white";
-      let headerTextColor = Color(backgroundColor).luminosity() > 0.3
-        ? "rgba(0,0,0,0.3)"
-        : "rgba(255,255,255,0.5)";
-
-      return (
-        <div className={styles.container} style={{
-          color: textColor
-        }}>
-          <BodyStyle style={{
-            backgroundColor: backgroundColor
-          }}/>
-          <Switch>
-            <Route path="/apps/:id/apps" render={({location, match}) => {
-              return (<NavBar textColor={headerTextColor} isNavVisible={true}/>)
+  <Route>
+    <div className={styles.container}>
+      <NavBar/>
+      <Switch>
+        <Route exact path="/(apps)?">
+          <div>
+            <BodyStyle style={{
+              backgroundColor: "#FFF",
+              color: "#333",
+              fill: "#333",
+              borderColor: "#333"
             }}/>
-            <Route render={({location, match}) => {
-              return (<NavBar textColor={headerTextColor}/>)
+            <Home/>
+          </div>
+        </Route>
+        <Route exact path="/contact/(apps)?">
+          <div>
+            <BodyStyle style={{
+              backgroundColor: "#DDF4FD",
+              color: "rgba(0,0,0,0.3)",
+              fill: "rgba(0,0,0,0.3)",
+              borderColor: "rgba(0,0,0,0.3)"
             }}/>
-          </Switch>
+            <Contact/>
+          </div>
+        </Route>
+        <Route exact path="/support/(apps)?">
+          <div>
+            <BodyStyle style={{
+              backgroundColor: "#AAFFCC",
+              color: "rgba(0,0,0,0.3)",
+              fill: "rgba(0,0,0,0.3)",
+              borderColor: "rgba(0,0,0,0.3)"
+            }}/>
+            <Support/>
+          </div>
+        </Route>
+        <Route exact path={`/apps/:id(${appNames.join("|")})/(apps|faq)?/(apps)?`} render={({ match }) => {
+          let projectName = match.params.id.toLowerCase();
+          let project = projects[projectName];
+          let backgroundColor = "#EEE";
 
-          <Switch>
-            <Route path="/apps/:id/faq" render={({location, match}) => {
-              return (<Faq project={match.params.id}/>)
-            }}/>
-            <Route location={location} path="/apps/mastercontrol" component={MasterControl}/>
-            <Route location={location} path="/apps/mastercaster" component={MasterCaster}/>
-            <Route location={location} path="/apps/quicktwitch" component={QuickTwitch}/>
-            <Route location={location} path="/apps/pod2watch" component={Pod2Watch}/>
-            <Route location={location} component={NotFound}/>
-          </Switch>
-          <Footer basePath={match.params.id}/>
-        </div>
-      )
-    }}/>
-    <Route>
-      <div className={styles.container}>
-        <BodyStyle style={{
-          backgroundColor: "transparent"
+          if (project !== undefined) {
+            backgroundColor = projects[projectName].backgroundColor;
+          }
+
+          let isBackgroundBright = Color(backgroundColor).luminosity() > 0.3;
+          let textColor = isBackgroundBright
+            ? "rgba(0,0,0,0.5)"
+            : "rgba(255,255,255,0.5)";
+
+          return (
+            <div>
+              <BodyStyle style={{
+                backgroundColor: backgroundColor,
+                color: textColor,
+                fill: textColor
+              }}/>
+              <Switch>
+                <Route path="/apps/castsync" component={CastSync}/>
+                <Route path="/apps/mastercontrol" component={MasterControl}/>
+                <Route path="/apps/mastercaster" component={MasterCaster}/>
+                <Route path="/apps/quicktwitch" component={QuickTwitch}/>
+                <Route path="/apps/pod2watch" component={Pod2Watch}/>
+              </Switch>
+            </div>
+          )
         }}/>
-        <NavBar textColor="#555"/>
-        <NotFound/>
-        <Footer/>
-      </div>
-    </Route>
-  </Switch>
-</BrowserRouter>, document.body.appendChild(document.createElement('div')));
+        <Route>
+          <div>
+            <BodyStyle style={{
+              backgroundColor: "#EEE",
+              color: "#333",
+              fill: "#333"
+            }}/>
+            <NotFound/>
+          </div>
+        </Route>
+      </Switch>
+      <Switch>
+        <Route exact path="/(apps)?">
+          <Footer style={{color: "rgba(0,0,0,0.3)"}}/>
+        </Route>
+        <Route>
+          <Footer/>
+        </Route>
+      </Switch>
+    </div>
+  </Route>
+</BrowserRouter>
+  , document.body.appendChild(document.createElement('div')));
 
 // const App = ({ match }) => {
 //   return <Home isPickerVisible={ match.path === '/projects' } />

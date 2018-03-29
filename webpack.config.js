@@ -21,7 +21,7 @@ module.exports = {
     filename: './bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.css$/,
         include: path.resolve(__dirname, 'app'),

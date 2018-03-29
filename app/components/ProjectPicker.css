@@ -11,8 +11,10 @@
   margin: 0;
   -webkit-user-select: none;
   user-select: none;
-  padding: 0 10px;
+  padding: 0;
   color: #DDD;
+  height: 130px;
+  box-sizing: border-box;
 }
 
 .projectPicker li:not(:first-child) {
@@ -21,5 +23,4 @@
 
 ol {
   list-style-type: none;
-  padding-left: 0;
 }

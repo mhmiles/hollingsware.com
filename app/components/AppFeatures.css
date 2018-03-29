@@ -1,0 +1,12 @@
+.featureContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-self: stretch;
+}
+
+@media (min-width: 1280px) {
+  .featureContainer {
+    flex-direction: row;
+  }
+}

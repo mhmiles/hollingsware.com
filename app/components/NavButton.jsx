@@ -1,16 +1,13 @@
 import styles from './NavButton.css'
 import React from 'react';
-import Color from 'color';
 
-export default ({onClick, borderColor}) => {
-  const barColor = Color(borderColor).opaquer(1.6).string();
-
+export default ({ onClick, borderColor }) => {
   return (
-    <div className={styles.navButton} style={{borderColor: borderColor}} onClick={onClick}>
+    <div className={styles.navButton} onClick={onClick}>
       <div className={styles.barContainer}>
-        <Bar backgroundColor={barColor}/>
-        <Bar backgroundColor={barColor}/>
-        <Bar backgroundColor={barColor}/>
+        <Bar backgroundColor={borderColor}/>
+        <Bar backgroundColor={borderColor}/>
+        <Bar backgroundColor={borderColor}/>
       </div>
     </div>
   )

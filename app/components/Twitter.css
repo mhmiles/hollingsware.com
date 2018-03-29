@@ -1,9 +1,5 @@
-.twitter {
-  transition: fill 300ms ease-in-out;
-}
-
 .graphic {
-  transition: fill 300ms ease-in-out;
+  transition: fill 300ms ease-in-out, stroke 300ms ease-in-out;
 }
 
 .graphic:hover {

@@ -1,17 +1,13 @@
 import React from 'react'
-import faqs from "./allfaq"
 import styles from './Faq.css'
 
-export default ({project}) => {
-  let projectFaqs = faqs[project.toLowerCase()]
-
-  console.log(projectFaqs)
-
+export default ({ faq, title, style }) => {
   return (
-    <div className={styles.faq}>
-      <h1>Frequently Asked Questions</h1>
+    <div className={styles.faq} style={style}>
+      <h1>{title}</h1>
+      <h2>Frequently Asked Questions</h2>
       {
-        projectFaqs.map((faqItem, index) => {
+        faq.map((faqItem, index) => {
           return (
             <div key={index} className={styles.faqItem}>
               <div className={styles.question}>

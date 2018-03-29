@@ -29,6 +29,8 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  position: relative;
+  color: #333;
 }
 
 .contact {
@@ -41,4 +43,5 @@
 
 .contactItem {
   width: 120px;
+  transition: fill 300ms ease-in-out;
 }

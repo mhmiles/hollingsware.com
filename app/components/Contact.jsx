@@ -3,14 +3,16 @@ import styles from './Contact.css'
 import Twitter from './Twitter'
 import Email from './Email'
 import Face from './Face'
+import Line from './PixelLine'
 
 const contactColor = "#0082B2";
 
 export default () => {
   return (
     <div className={styles.about}>
+      <Line style={{top: 0, position: "absolute", backgroundColor: "rgba(0,0,0,0.15)"}} />
       <div className={styles.description}>
-        Hollingsware is the product of:
+        Hollingsware is a creation of:
       </div>
       <div className={styles.name}>
         Miles Hollingsworth
