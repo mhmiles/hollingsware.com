@@ -14,8 +14,8 @@ import Color from 'color';
 import Contact from './components/Contact'
 import Support from './components/Support'
 import NavBar from './components/NavBar'
-import BodyStyle from 'body-style'
 import NotFound from './components/NotFound'
+import { Helmet } from 'react-helmet'
 
 let appNames = [
   "castsync",
@@ -33,34 +33,41 @@ render(
       <Switch>
         <Route exact path="/(apps)?">
           <div>
-            <BodyStyle style={{
-              backgroundColor: "#FFF",
-              color: "#333",
-              fill: "#333",
-              borderColor: "#333"
-            }}/>
+            <Helmet>
+              <body style={
+                `background-color: "#FFF";
+                color: "#333";
+                fill: "#333";
+                border-color: "#333";`
+              }
+               />
+            </Helmet>
             <Home/>
           </div>
         </Route>
         <Route exact path="/contact/(apps)?">
           <div>
-            <BodyStyle style={{
-              backgroundColor: "#DDF4FD",
-              color: "rgba(0,0,0,0.3)",
-              fill: "rgba(0,0,0,0.3)",
-              borderColor: "rgba(0,0,0,0.3)"
-            }}/>
+            <Helmet>
+              <body style={
+                `background-color: "#AAFFCC";
+                color: "rgba(0,0,0,0.3)";
+                fill: "rgba(0,0,0,0.3)";
+                border-color: "rgba(0,0,0,0.3)";`
+              } />
+            </Helmet>
             <Contact/>
           </div>
         </Route>
         <Route exact path="/support/(apps)?">
           <div>
-            <BodyStyle style={{
-              backgroundColor: "#AAFFCC",
-              color: "rgba(0,0,0,0.3)",
-              fill: "rgba(0,0,0,0.3)",
-              borderColor: "rgba(0,0,0,0.3)"
-            }}/>
+            <Helmet>
+              <body style={
+                `background-color: "#AAFFCC";
+                color: "rgba(0,0,0,0.3)";
+                fill: "rgba(0,0,0,0.3)";
+                border-color: "rgba(0,0,0,0.3)";`
+              } />
+            </Helmet>
             <Support/>
           </div>
         </Route>
@@ -80,11 +87,11 @@ render(
 
           return (
             <div>
-              <BodyStyle style={{
-                backgroundColor: backgroundColor,
-                color: textColor,
-                fill: textColor
-              }}/>
+              <Helmet>
+                <body style={`background-color: ${backgroundColor};
+                  color: ${textColor};
+                  fill: ${textColor};`} />
+              </Helmet>
               <Switch>
                 <Route path="/apps/castsync" component={CastSync}/>
                 <Route path="/apps/mastercontrol" component={MasterControl}/>
@@ -97,11 +104,13 @@ render(
         }}/>
         <Route>
           <div>
-            <BodyStyle style={{
-              backgroundColor: "#EEE",
-              color: "#333",
-              fill: "#333"
-            }}/>
+            <Helmet>
+              <body style={
+                `backgroundColor: "#EEE";,
+                color: "#333";
+                fill: "#333";`
+              } />
+            </Helmet>
             <NotFound/>
           </div>
         </Route>

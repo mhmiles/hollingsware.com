@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import styles from './NavBar.css';
 import NavButton from './NavButton'
 import Logo from './Logo'
-import PropTypes from 'prop-types'
 import Color from 'color';
 import ProjectPicker from './ProjectPicker'
 import projects from '../projects'
@@ -80,8 +79,4 @@ export default class NavBar extends React.Component {
       isNavVisible: !this.state.isNavVisible
     })
   }
-}
-
-NavBar.propTypes = {
-  isNavVisible: PropTypes.bool
 }

@@ -1,7 +1,7 @@
 var webpack = require('webpack');
 var path = require('path');
-var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   devtool: 'cheap-source-map',
@@ -35,35 +35,38 @@ module.exports = {
         include: path.resolve(__dirname, 'app'),
         exclude: /node_modules/,
         use: 'babel-loader'
-      },
-      {
-        test: /\.(m4v)$/,
-        use: 'file-loader'
-      },
-      {
-        // match image files
-        test: /\.(jpe?g|png|svg|gif|ico)$/,
-
-        // match one of the loader's main parameters (sizes and placeholder)
-        // resourceQuery: /[?&](sizes|placeholder)(=|&|\[|$)/,
-
-        use: [
-          'srcset-loader',
-          'svg-loader',
-          // any other loader
-          'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-        ],
+      }, {
+        test: /\.(svg|m4v)$/,
+        loader: 'file-loader'
+      }, {
+        test: /\.(jpg|png|ico|gif)$/,
+        loader: 'url-loader',
+        options: {
+          fallback: 'file-loader',
+          limit: 25000
+        }
       }
+      // {
+      //   // match image files
+      //   test: /\.(jpe?g|png|svg|gif|ico)$/,
+      //
+      //   // match one of the loader's main parameters (sizes and placeholder)
+      //   // resourceQuery: /[?&](sizes|placeholder)(=|&|\[|$)/,
+      //
+      //   use: [
+      //     'svg-loader',
+      //     // any other loader
+      //     'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
+      //   ],
+      // }
     ]
   },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
   plugins: [
-    new uglifyJsPlugin({
-      compress: {
-        warnings: false
-      }
+    new UglifyJsPlugin({
+      sourceMap: true
     }),
     new webpack.DefinePlugin({
       'process.env': {
