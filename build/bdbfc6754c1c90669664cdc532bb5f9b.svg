@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon-Original</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="4.38914183%" fx="50%" fy="4.38914183%" r="76.4210817%" id="radialGradient-1">
+            <stop stop-color="#C300FF" offset="0%"></stop>
+            <stop stop-color="#7A48AB" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-3" cx="256" cy="256" r="256"></circle>
+        <linearGradient x1="50%" y1="20.6458335%" x2="50%" y2="114.09429%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#DDDDDD" offset="100%"></stop>
+        </linearGradient>
+        <path d="M274.72574,233.765417 L274.725743,56.5121413 L176.317881,292.409473 L237.270606,278.657422 L237.270603,455.910698 L335.678465,220.013367 L274.72574,233.765417 Z" id="path-5"></path>
+        <filter x="-0.6%" y="-0.3%" width="101.3%" height="100.5%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.115145289   0 0 0 0 0.0332323687   0 0 0 0 0.148517219  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-Original">
+            <g id="Group">
+                <g id="Oval-1">
+                    <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <circle stroke="url(#linearGradient-2)" stroke-width="18.0838852" cx="256" cy="256" r="246.958057"></circle>
+                </g>
+                <g id="Combined-Shape">
+                    <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

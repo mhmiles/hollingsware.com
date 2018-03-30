@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="200px" viewBox="0 0 150 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>pattern</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="30" cy="30" r="30"></circle>
+        <path d="M32.1944226,27.3943849 L32.194423,6.62251656 L20.6622517,34.2667351 L27.8051492,32.6551667 L27.8051488,53.427035 L39.3373201,25.7828164 L32.1944226,27.3943849 Z" id="path-2"></path>
+        <circle id="path-4" cx="30" cy="30" r="30"></circle>
+        <path d="M32.1944226,27.3943849 L32.194423,6.62251656 L20.6622517,34.2667351 L27.8051492,32.6551667 L27.8051488,53.427035 L39.3373201,25.7828164 L32.1944226,27.3943849 Z" id="path-5"></path>
+        <circle id="path-7" cx="30" cy="30" r="30"></circle>
+        <path d="M32.1944226,27.3943849 L32.194423,6.62251656 L20.6622517,34.2667351 L27.8051492,32.6551667 L27.8051488,53.427035 L39.3373201,25.7828164 L32.1944226,27.3943849 Z" id="path-8"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.1">
+        <g id="pattern">
+            <g id="icon" transform="translate(45.000000, 20.000000)">
+                <g id="Group">
+                    <g id="Oval-1">
+                        <use fill="#873BBA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <circle stroke="#FFFFFF" stroke-width="2.1192053" cx="30" cy="30" r="28.9403974"></circle>
+                    </g>
+                    <g id="Combined-Shape">
+                        <use fill="#white" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <use fill="white" fill-opacity="1"  xlink:href="#path-2"></use>
+                    </g>
+                </g>
+            </g>
+            <g id="icon" transform="translate(120.000000, 120.000000)">
+                <g id="Group">
+                    <g id="Oval-1">
+                        <use fill="#873BBA" fill-rule="evenodd" xlink:href="#path-4"></use>
+                        <circle stroke="#FFFFFF" stroke-width="2.1192053" cx="30" cy="30" r="28.9403974"></circle>
+                    </g>
+                    <g id="Combined-Shape">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <use fill="white" fill-opacity="1"  xlink:href="#path-5"></use>
+                    </g>
+                </g>
+            </g>
+            <g id="icon" transform="translate(-30.000000, 120.000000)">
+                <g id="Group">
+                    <g id="Oval-1">
+                        <use fill="#873BBA" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        <circle stroke="#FFFFFF" stroke-width="2.1192053" cx="30" cy="30" r="28.9403974"></circle>
+                    </g>
+                    <g id="Combined-Shape">
+                        <use fill="#white" fill-rule="evenodd" xlink:href="#path-8"></use>
+                        <use fill="white" fill-opacity="1"  xlink:href="#path-8"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
